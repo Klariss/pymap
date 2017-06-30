@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS = false; L_NO_TOUCH = false; L_DISABLE_3D = false;</script>
+    <script src="https://unpkg.com/leaflet@1.0.1/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/leaflet.markercluster-src.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/MarkerCluster.Default.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://rawgit.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css" />
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <style> #map_daed593731514c55a955419d90b2ccec {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_daed593731514c55a955419d90b2ccec" ></div>
+        
+</body>
+<script>    
+    
+
+            
+                var southWest = L.latLng(-90, -180);
+                var northEast = L.latLng(90, 180);
+                var bounds = L.latLngBounds(southWest, northEast);
+            
+
+            var map_daed593731514c55a955419d90b2ccec = L.map(
+                                  'map_daed593731514c55a955419d90b2ccec',
+                                  {center: [46.336135,13.786698],
+                                  zoom: 11,
+                                  maxBounds: bounds,
+                                  layers: [],
+                                  worldCopyJump: false,
+                                  crs: L.CRS.EPSG3857
+                                 });
+            
+        
+    
+            var tile_layer_9bb05ed607d6405c994c67fa76d0a1ec = L.tileLayer(
+                'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+                {
+                    maxZoom: 18,
+                    minZoom: 1,
+                    continuousWorld: false,
+                    noWrap: false,
+                    attribution: 'Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.',
+                    detectRetina: false
+                    }
+                ).addTo(map_daed593731514c55a955419d90b2ccec);
+
+        
+    
+
+            var marker_1f6d3f7cb29242e8af5280cbb93d012f = L.marker(
+                [46.283288,13.833684],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_daed593731514c55a955419d90b2ccec);
+            
+    
+            var popup_8f886ee003f146fcbcc176e8e1228218 = L.popup({maxWidth: '300'});
+
+            
+                var html_b488f93f17174446ae7214a686a1c5fd = $('<div id="html_b488f93f17174446ae7214a686a1c5fd" style="width: 100.0%; height: 100.0%;">sexy strand</div>')[0];
+                popup_8f886ee003f146fcbcc176e8e1228218.setContent(html_b488f93f17174446ae7214a686a1c5fd);
+            
+
+            marker_1f6d3f7cb29242e8af5280cbb93d012f.bindPopup(popup_8f886ee003f146fcbcc176e8e1228218);
+
+            
+        
+    
+
+            var circle_marker_c401e0442d864813befc02c9ad8762d2 = L.circleMarker(
+                [46.273276,13.893348],
+                {
+                    color: 'red',
+                    weight: 2,
+                    fillColor: 'black',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(10)
+                .addTo(map_daed593731514c55a955419d90b2ccec);
+            
+    
+            var popup_6eeb94ce88724b8c9f801c5e36898b02 = L.popup({maxWidth: '300'});
+
+            
+                var html_990b74aebf6a484ea32a750e01f7ec6d = $('<div id="html_990b74aebf6a484ea32a750e01f7ec6d" style="width: 100.0%; height: 100.0%;">sweet home</div>')[0];
+                popup_6eeb94ce88724b8c9f801c5e36898b02.setContent(html_990b74aebf6a484ea32a750e01f7ec6d);
+            
+
+            circle_marker_c401e0442d864813befc02c9ad8762d2.bindPopup(popup_6eeb94ce88724b8c9f801c5e36898b02);
+
+            
+        
+    
+
+            var marker_894b2f7464ea433580025852ee9b7e10 = L.marker(
+                [46.26176,13.592697],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_daed593731514c55a955419d90b2ccec);
+            
+    
+            var popup_0be116e0981b429a8fa339734ad879d4 = L.popup({maxWidth: '300'});
+
+            
+                var html_0c5b4d1f7352420e94d2cd31dc9934a1 = $('<div id="html_0c5b4d1f7352420e94d2cd31dc9934a1" style="width: 100.0%; height: 100.0%;">Cobarid vízesés(vízesésben fürdés),(70km)</div>')[0];
+                popup_0be116e0981b429a8fa339734ad879d4.setContent(html_0c5b4d1f7352420e94d2cd31dc9934a1);
+            
+
+            marker_894b2f7464ea433580025852ee9b7e10.bindPopup(popup_0be116e0981b429a8fa339734ad879d4);
+
+            
+        
+    
+
+            var marker_530e33871ca74f62a0f3925ac06d1231 = L.marker(
+                [46.349391,13.802744],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_daed593731514c55a955419d90b2ccec);
+            
+    
+            var popup_18f9be56154947519763c3cd175976ef = L.popup({maxWidth: '300'});
+
+            
+                var html_689b511ef4524fbe9c3a0d0b336f785e = $('<div id="html_689b511ef4524fbe9c3a0d0b336f785e" style="width: 100.0%; height: 100.0%;">mészköves hegytető (13km)</div>')[0];
+                popup_18f9be56154947519763c3cd175976ef.setContent(html_689b511ef4524fbe9c3a0d0b336f785e);
+            
+
+            marker_530e33871ca74f62a0f3925ac06d1231.bindPopup(popup_18f9be56154947519763c3cd175976ef);
+
+            
+        
+    
+
+            var marker_25b1b1fe26d14ed2b239237747b13575 = L.marker(
+                [46.293537,13.493032],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_daed593731514c55a955419d90b2ccec);
+            
+    
+            var popup_19dd993b86cc402cb4d47a9869e3e100 = L.popup({maxWidth: '300'});
+
+            
+                var html_4473541d88324d989a5178323555b94f = $('<div id="html_4473541d88324d989a5178323555b94f" style="width: 100.0%; height: 100.0%;">Susec - canyoning (55euro, 87km), http://www.lifeadventures.si/adventures/canyoning-slovenia/canyoning-susec/</div>')[0];
+                popup_19dd993b86cc402cb4d47a9869e3e100.setContent(html_4473541d88324d989a5178323555b94f);
+            
+
+            marker_25b1b1fe26d14ed2b239237747b13575.bindPopup(popup_19dd993b86cc402cb4d47a9869e3e100);
+
+            
+        
+    
+
+            var marker_1ecebd809c964a2fafffbbd49de4d376 = L.marker(
+                [46.368547,14.11411],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_daed593731514c55a955419d90b2ccec);
+            
+    
+            var popup_a43862e3c1914b97882eeb1968f30ef0 = L.popup({maxWidth: '300'});
+
+            
+                var html_fb9ff57306e9499e87d79758f9e90652 = $('<div id="html_fb9ff57306e9499e87d79758f9e90652" style="width: 100.0%; height: 100.0%;">rafting (35euro, 26km)</div>')[0];
+                popup_a43862e3c1914b97882eeb1968f30ef0.setContent(html_fb9ff57306e9499e87d79758f9e90652);
+            
+
+            marker_1ecebd809c964a2fafffbbd49de4d376.bindPopup(popup_a43862e3c1914b97882eeb1968f30ef0);
+
+            
+        
+    
+
+            var marker_f182328151b249db8e257fc4cb992fe4 = L.marker(
+                [46.393776,14.085619],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_daed593731514c55a955419d90b2ccec);
+            
+    
+            var popup_908f1952d07e4f9cbe2d97c77f3a4540 = L.popup({maxWidth: '300'});
+
+            
+                var html_e0766b23152b48268f1a986ed29daf21 = $('<div id="html_e0766b23152b48268f1a986ed29daf21" style="width: 100.0%; height: 100.0%;">Vintgar-szurdok (27km)</div>')[0];
+                popup_908f1952d07e4f9cbe2d97c77f3a4540.setContent(html_e0766b23152b48268f1a986ed29daf21);
+            
+
+            marker_f182328151b249db8e257fc4cb992fe4.bindPopup(popup_908f1952d07e4f9cbe2d97c77f3a4540);
+
+            
+        
+</script>
